@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
 *{padding:0;margin:0;border:0;}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
@@ -19,13 +19,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 body
 {
 	background: #000;
-	font-family: 'Gayathri', sans-serif;
+	font-family: 'Caveat', cursive;
+	/* font-family: 'Montserrat', sans-serif; */
 }
 .main-page
 {
-	/* background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.6)), url(background.jpg); */
-	background: url(background.jpg);
-	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url(4.webp);
+	/* background: url(1.jpeg); */
+	min-height: 100vh;
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -37,46 +38,49 @@ body
 .container
 {
 	max-width: 1300px;
-	padding: 0 15px;
+	padding: 0px 15px;
 	margin: 0 auto;
 }
 h1{
-	color: #89fffd;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 	font-weight: bold;
-	font-size: 5em;
+	font-size: 8em;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	text-align: center;
 	margin-bottom: 1em;
+	background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+	padding-top: 40px;
 }
-h1 span{
-	color:  #ef32d9;
-}
+
 h2{
 	font-size: 2.7em;
 	color: #89fffd;
 	text-align: center;
-	margin-bottom: .5em;
+	margin-bottom: 3em;
 	text-transform: uppercase;
 }
 h3{
 	font-size: 3em;
-	color: #ef32d9;
+	color: #fff;
 	text-align: center;
 	margin-bottom: 1.8em;
+
 }
 h4{
 	font-size: 3em;
 	text-align: center;
 	color: #FFFFFF;
-	text-shadow: 0 0 10px #00b3ff,
+	/* text-shadow: 0 0 10px #00b3ff,
 	0 0 20px #00b3ff,
 	0 0 40px #00b3ff,
 	0 0 80px #00b3ff,
 	0 0 120px #00b3ff,
 	0 0 200px #00b3ff,
 	0 0 300px #00b3ff,
-	0 0 400px #00b3ff;
+	0 0 400px #00b3ff; */
 }
 h5{
 	text-align: center;
@@ -86,4 +90,22 @@ h5{
 }
 h6{
 	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
 }
+@media screen and (max-width: 475px){
+	.main-page{
+		background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)), url(1.jpeg);
+		background-position: center;
+	background-size: cover;
+	}
+	h1{
+		font-size: 3em;
+		padding-top: 4em;
+		background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+	}
+	h2{
+		font-size: 1.5em;
+	}
+}
+
